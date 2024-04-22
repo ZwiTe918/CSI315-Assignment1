@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="scale" content="width=device-width initial-scale=1.0">
+        <meta name="author" content="Kuyenzeka Zwide Nxumalo 201900295">
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" 
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+        <link rel="stylesheet" type="text/css" href="astyle.css">
+        <title>Assignment 1</title>
+    </head>
+    <body>
+        <div class="header">
+            <nav class="navbar"> 
+                <div class="container">
+                    <div class="navbar-header">
+                        <a href=""><img src="the heart.png" alt="united" class="logo"></a>
+                    </div>
+                    <ul id="menu">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#About" class="nav-link">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#History" class="nav-link">History</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <div class="container-sm">
+            <h1>United Investment</h1>
+            <h6>Leading the investment world!!</h6> <br>
+
+            <div class="row">
+                <div class="col-sm-sm">
+                    <h3>Our location</h3>
+                    <img src="download4.jpg" id="image1" alt="location" class="location"> 
+                    <img src="download10.jpg" id="image1" alt="location" class="location"> <br><br><br>
+                    <h2>Find us at Wall Street building 015, 30th floor!!</h2><br><br><br>
+
+                    <table class="displayHistory">
+                        <tr>
+                            <th>A Slideshow About What We Do!!</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="download3.jpg" id="image1" alt="stocks" class="img-responsive"><br>
+                                <img src="download11.jpg" id="image1" alt="stocks" class="img-responsive"><br>
+                                <img src="download5.jpg" id="image1" alt="stocks" class="img-responsive"><br>
+                                <img src="download7.jpg" id="image1" alt="stocks" class="img-responsive"><br>
+                                <img src="download8.jpg" id="image1" alt="stocks" class="img-responsive"><br>
+                                <img src="download9.jpg" id="image1" alt="stocks" class="img-responsive"><br>
+
+                                <script>
+                                    var slideIndex = 0;
+                                    carousel();
+                        
+                                    function carousel() {
+                                    var i;
+                                    var x = document.getElementsByClassName("img-responsive");
+                                    for (i = 0; i < x.length; i++) {
+                                        x[i].style.display = "none";
+                                    }
+                                    slideIndex++;
+                                    if (slideIndex > x.length) {slideIndex = 1}
+                                    x[slideIndex-1].style.display = "block";
+                                    setTimeout(carousel, 5000); // Change image every 5 seconds
+                                    }
+                                </script>
+                            </td> 
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="embed-responsive embed-responsive-16by9">
+                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/watch?v=ZCFkWDdmXG8"></iframe>
+                                </div>
+                           </td>
+                        </tr>
+                    </table>
+            </div>
+        </div><br>
+
+        <div class="row">
+            <div class="col-md-4">
+              <div class="thumbnail">
+                <a href="/w3images/lights.jpg">
+                  <img src="lights.jpg" alt="Lights" style="width:100%">
+                  <div class="caption">
+                    <p>Lorem ipsum...</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="thumbnail">
+                <a href="/w3images/nature.jpg">
+                  <img src="nature.jpg" alt="Nature" style="width:100%">
+                  <div class="caption">
+                    <p>Lorem ipsum...</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="thumbnail">
+                <a href="/w3images/fjords.jpg">
+                  <img src="fjords.jpg" alt="Fjords" style="width:100%">
+                  <div class="caption">
+                    <p>Lorem ipsum...</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+        </div>
+        <br><br><br>
+        <div class="container col-md">
+            <a href="https://www.facebook.com/Zwide Nxumalo/" class="fa fa-facebook"></a>
+            <a href="https://www.twitter.com/ZwiTe918/" class="fa fa-twitter"></a>
+            <a href="https://www.linkedin.com/in/zwide-nxumalo-180261239/" class="fa fa-linkedin"></a>
+            <a href="https://www.instagram.com/zwite918/" class="fa fa-instagram"></a>
+        </div>
+
+        <footer>
+            &copy; 2022 United Investment. All Rights Reserved.
+        </footer>
+    </body>
+</html>
